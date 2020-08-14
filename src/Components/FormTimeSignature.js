@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 
-import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button'
+import FormControl from '@material-ui/core/FormControl';
 import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
@@ -24,24 +25,24 @@ export class FormTimeSignature extends Component {
 
 
         return (
-            <MuiThemeProvider>
+            <ThemeProvider>
                 <div className="form-container">
                     <h1 className="mb-5">Time Signatures</h1>
 
                     <FormGroup row>
                         {
                             values.Times.map(item => (
-
-                                <FormControlLabel
-                                    control={<Checkbox checked={item.value} onChange={handleChange(item.id)} name={item.name} />}
-                                    label={
-                                        <React.Fragment>
-                                            <img src={item.img} alt={item.label} style={{ height: 50 }} />
-                                            {item.label}
-                                        </React.Fragment>
-                                    }
-                                />
-
+                                <FormControl key={item.id} >
+                                    <FormControlLabel
+                                        control={<Checkbox checked={item.value} onChange={handleChange(item.id)} name={item.name} />}
+                                        label={
+                                            <React.Fragment>
+                                                <img src={item.img} alt={item.label} style={{ height: 50 }} />
+                                                {" " + item.label}
+                                            </React.Fragment>
+                                        }
+                                    />
+                                </FormControl>
                             ))
                         }
                     </FormGroup>
@@ -62,7 +63,7 @@ export class FormTimeSignature extends Component {
                         Next
                     </Button>
                 </div>
-            </MuiThemeProvider>
+            </ThemeProvider>
         )
     }
 }

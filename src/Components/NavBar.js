@@ -20,19 +20,16 @@ const Styles = styled.div`
 `;
 
 
-
-
 export const NavBar = () => (
-
     <Styles>
-        <Navbar className="shadow" expand="lg" variant="light" fixed="top">
-            <div class="container">
+        <Navbar collapseOnSelect className="shadow" expand="lg" variant="light" fixed="top">
+            <div className="container">
                 <Navbar.Brand href="/"><b>S♪ght<font color="#006666"><em>Read</em></font></b></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto">
-                        <Nav.Item><Nav.Link><Link to="/">Home</Link></Nav.Link></Nav.Item>
-                        <Nav.Item><Nav.Link><Link to="/about">About</Link></Nav.Link></Nav.Item>
+                        <Nav.Item><Nav.Link eventKey="1" as={Link} to="/">Home</Nav.Link></Nav.Item>
+                        <Nav.Item><Nav.Link eventKey="2" as={Link} to="/about">About</Nav.Link></Nav.Item>
                     </Nav>
                 </Navbar.Collapse>
             </div>

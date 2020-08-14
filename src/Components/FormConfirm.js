@@ -7,7 +7,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 export class FormConfirm extends Component {
     continue = e => {
         e.preventDefault();
-        // PROCESS FORM HERE //
+        this.props.generate();
         this.props.nextStep();
     };
 
@@ -23,25 +23,20 @@ export class FormConfirm extends Component {
             values: { Keys, Times }
         } = this.props;
 
-        var text = '';
-        var i;
-
-        for (i = 0; i < Keys.length; i++) {
-            if (Keys[i].value == true) {
-                text += Keys[i].label + '<br>';
-            }
-        }
-
         this.keys = Keys.map((item) => {
-            if (item.value == true) {
+            if (item.value === true) {
                 return <li key={item.id}><img src={item.img} alt={item.label} style={{ height: 50 }} /> {item.label}</li>
+            } else {
+                return null
             }
         }
         );
 
         this.times = Times.map((item) => {
-            if (item.value == true) {
+            if (item.value === true) {
                 return <li key={item.id}><img src={item.img} alt={item.label} style={{ height: 50 }} /> {item.label}</li>
+            } else {
+                return null
             }
         }
         );
@@ -60,13 +55,12 @@ export class FormConfirm extends Component {
                     <ListItem button>
                         <ListItemText
                             primary="Time Signatures"
-                            seconday={this.times}
+                            secondary={this.times}
                         />
                     </ListItem>
                 </List>
 
                 <br />
-
 
                 <Button
                     onClick={this.back}

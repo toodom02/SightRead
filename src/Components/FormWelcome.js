@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
+import { ThemeProvider } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button'
 
 export class FormWelcome extends Component {
@@ -12,11 +12,11 @@ export class FormWelcome extends Component {
     render() {
 
         return (
-            <MuiThemeProvider>
+            <ThemeProvider>
                 <div className="form-container">
-                    <h1 className="mb-5">Welcome</h1>
+                    <h1>Welcome</h1>
                     <p>Hi,<br />
-                    Click Next to Start Geenrating music!<br />
+                    Click Next to Start Generating music!<br />
                     </p>
 
 
@@ -27,7 +27,7 @@ export class FormWelcome extends Component {
                     >Next
                     </Button>
                 </div>
-            </MuiThemeProvider>
+            </ThemeProvider>
         )
     }
 }
