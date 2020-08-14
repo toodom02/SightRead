@@ -7,11 +7,8 @@ const Styles = styled.div`
     .navbar {
         background-color: #f8f8f8;
     }
-
-
     a, .navbar-nav .nav-link {
         color: #000000;
-
         &:hover{
             text-decoration: none !important; 
             color: gray;

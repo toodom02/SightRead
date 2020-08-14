@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import Button from '@material-ui/core/Button';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemText from '@material-ui/core/ListItemText';
+import { Container, Button, List, ListItem, ListItemText } from '@material-ui/core';
 
 export class FormConfirm extends Component {
     continue = e => {
@@ -15,7 +12,6 @@ export class FormConfirm extends Component {
         e.preventDefault();
         this.props.prevStep();
     };
-
 
 
     render() {
@@ -42,7 +38,7 @@ export class FormConfirm extends Component {
         );
 
         return (
-            <div className="form-container">
+            <Container maxWidth="md">
                 <h1 className="mb-5">Confirm</h1>
                 <List>
                     <ListItem button>
@@ -75,7 +71,7 @@ export class FormConfirm extends Component {
                 >
                     Generate
                 </Button>
-            </div>
+            </Container>
         )
     }
 }

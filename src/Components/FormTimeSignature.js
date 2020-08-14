@@ -1,11 +1,5 @@
-import React, { Component } from 'react'
-
-import { ThemeProvider } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button'
-import FormControl from '@material-ui/core/FormControl';
-import FormGroup from '@material-ui/core/FormGroup';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Checkbox from '@material-ui/core/Checkbox';
+import React, { Component } from 'react';
+import { Container, Button, FormControl, FormGroup, FormControlLabel, Checkbox } from '@material-ui/core';
 
 
 export class FormTimeSignature extends Component {
@@ -19,51 +13,47 @@ export class FormTimeSignature extends Component {
         this.props.prevStep();
     };
 
-
     render() {
         const { values, handleChange } = this.props;
 
-
         return (
-            <ThemeProvider>
-                <div className="form-container">
-                    <h1 className="mb-5">Time Signatures</h1>
+            <Container maxWidth="md">
+                <h1 className="mb-5">Time Signatures</h1>
 
-                    <FormGroup row>
-                        {
-                            values.Times.map(item => (
-                                <FormControl key={item.id} >
-                                    <FormControlLabel
-                                        control={<Checkbox checked={item.value} onChange={handleChange(item.id)} name={item.name} />}
-                                        label={
-                                            <React.Fragment>
-                                                <img src={item.img} alt={item.label} style={{ height: 50 }} />
-                                                {" " + item.label}
-                                            </React.Fragment>
-                                        }
-                                    />
-                                </FormControl>
-                            ))
-                        }
-                    </FormGroup>
+                <FormGroup row style={{ textAlign: "center" }}>
+                    {
+                        values.Times.map(item => (
+                            <FormControl key={item.id} >
+                                <FormControlLabel
+                                    control={<Checkbox checked={item.value} onChange={handleChange(item.id)} name={item.name} />}
+                                    label={
+                                        <React.Fragment>
+                                            <img src={item.img} alt={item.label} style={{ height: 50 }} />
+                                            {" " + item.label}
+                                        </React.Fragment>
+                                    }
+                                />
+                            </FormControl>
+                        ))
+                    }
+                </FormGroup>
 
-                    <br />
+                <br />
 
-                    <Button
-                        onClick={this.back}
-                    >
-                        Back
+                <Button
+                    onClick={this.back}
+                >
+                    Back
                     </Button>
 
-                    <Button
-                        variant="contained"
-                        color="primary"
-                        onClick={this.continue}
-                    >
-                        Next
+                <Button
+                    variant="contained"
+                    color="primary"
+                    onClick={this.continue}
+                >
+                    Next
                     </Button>
-                </div>
-            </ThemeProvider>
+            </Container>
         )
     }
 }

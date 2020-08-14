@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import { ThemeProvider } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button'
+import React, { Component } from 'react';
+import { Container, Button } from '@material-ui/core';
+
 
 export class FormWelcome extends Component {
     continue = e => {
@@ -8,26 +8,22 @@ export class FormWelcome extends Component {
         this.props.nextStep();
     };
 
-
     render() {
 
         return (
-            <ThemeProvider>
-                <div className="form-container">
-                    <h1>Welcome</h1>
-                    <p>Hi,<br />
-                    Click Next to Start Generating music!<br />
-                    </p>
+            <Container maxWidth="md">
+                <h1>Welcome</h1>
+                <p>
+                    Click Next to Start Generating Music!
+                </p>
 
-
-                    <Button
-                        variant="contained"
-                        color="primary"
-                        onClick={this.continue}
-                    >Next
+                <Button
+                    variant="contained"
+                    color="primary"
+                    onClick={this.continue}
+                >Next
                     </Button>
-                </div>
-            </ThemeProvider>
+            </Container>
         )
     }
 }

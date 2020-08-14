@@ -4,7 +4,7 @@ import FormKeySignature from './FormKeySignature';
 import FormTimeSignature from './FormTimeSignature';
 import FormConfirm from './FormConfirm';
 import FormSuccess from './FormSuccess';
-import GenerateMidi from "./GenerateMidi";
+import GenerateXML from "./GenerateXML";
 
 import CMAm from "../Assets/Keys/Ca.svg"
 import AMFSm from "../Assets/Keys/Afs.svg"
@@ -44,8 +44,7 @@ export class Form extends Component {
 
     generate = () => {
         const { Keys, Times } = this.state;
-        this.setState({ midiFile: GenerateMidi(Keys, Times) });
-        this.setState({ xml: GenerateMidi(Keys, Times) });
+        this.setState({ xml: GenerateXML(Keys, Times) });
     }
 
 
@@ -70,7 +69,7 @@ export class Form extends Component {
     };
 
     render() {
-        const { step, midiFile, xml } = this.state;
+        const { step, xml } = this.state;
         const { Keys, Times } = this.state;
         const values = { Keys, Times };
 
@@ -111,7 +110,6 @@ export class Form extends Component {
             case 5:
                 return (
                     <FormSuccess
-                        midiFile={midiFile}
                         xml={xml}
                     />
                 );
