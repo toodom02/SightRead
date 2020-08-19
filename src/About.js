@@ -4,7 +4,7 @@ import { Container, Paper } from '@material-ui/core';
 export const About = () => (
     <div className="App">
         <Container maxWidth="md">
-            <Paper style={{ padding: "25px", margin: "25px" }}>
+            <Paper style={{ padding: "25px", margin: "25px 0 25px 0" }}>
                 <h1> Stinker degree renowned 20 Dotard.</h1>
                 <p>Tipsy furs sure directly feeling accept quest watches board Sauron's merely! Hear my voice. Come back to the light.</p>
                 <h2>Hardest Were-worms sacrifice!</h2>

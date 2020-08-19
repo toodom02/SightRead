@@ -20,23 +20,25 @@ export class FormTimeSignature extends Component {
             <Container maxWidth="md">
                 <h1 className="mb-5">Time Signatures</h1>
 
-                <FormGroup row style={{ textAlign: "center" }}>
-                    {
-                        values.Times.map(item => (
-                            <FormControl key={item.id} >
-                                <FormControlLabel
-                                    control={<Checkbox checked={item.value} onChange={handleChange(item.id)} name={item.name} />}
-                                    label={
-                                        <React.Fragment>
-                                            <img src={item.img} alt={item.label} style={{ height: 50 }} />
-                                            {" " + item.label}
-                                        </React.Fragment>
-                                    }
-                                />
-                            </FormControl>
-                        ))
-                    }
-                </FormGroup>
+                <FormControl component="fieldset">
+                    <FormGroup row>
+                        {
+                            values.Times.map(item => (
+                                <FormControl key={item.id} >
+                                    <FormControlLabel
+                                        control={<Checkbox checked={item.value} onChange={handleChange(item.id)} name={item.name} />}
+                                        label={
+                                            <React.Fragment>
+                                                <img src={item.img} alt={item.label} style={{ height: 50 }} />
+                                                {" " + item.label}
+                                            </React.Fragment>
+                                        }
+                                    />
+                                </FormControl>
+                            ))
+                        }
+                    </FormGroup>
+                </FormControl>
 
                 <br />
 

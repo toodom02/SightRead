@@ -24,22 +24,21 @@ export class Form extends Component {
     state = {
         step: 1,
         Keys: [
-            { id: 0, label: "C Major", name: "C", img: CMAm, value: true, notes: ['G3', 'A4', 'B4', 'C4', 'D4', 'E4', 'F4', 'G4', 'A5', 'B5', 'C5', 'D5', 'E5', 'F5', 'G5'] },
-            { id: 1, label: "G Major", name: "G", img: GMEm, value: true, notes: ['G3', 'A4', 'B4', 'C4', 'D4', 'E4', 'F#4', 'G4', 'A5', 'B5', 'C5', 'D5', 'E5', 'F#5', 'G5'] },
-            { id: 2, label: "D Major", name: "D", img: DMBm, value: true, notes: ['G3', 'A4', 'B4', 'C#4', 'D4', 'E4', 'F#4', 'G4', 'A5', 'B5', 'C#5', 'D5', 'E5', 'F#5', 'G5'] },
-            { id: 3, label: "A Major", name: "A", img: AMFSm, value: true, notes: ['G#3', 'A4', 'B4', 'C#4', 'D4', 'E4', 'F#4', 'G#4', 'A5', 'B5', 'C#5', 'D5', 'E5', 'F#5', 'G#5'] },
-            { id: 4, label: "E Major", name: "E", img: EMCSm, value: true, notes: ['G#3', 'A4', 'B4', 'C#4', 'D#4', 'E4', 'F#4', 'G#4', 'A5', 'B5', 'C#5', 'D#5', 'E5', 'F#5', 'G#5'] },
-            { id: 5, label: "B Major", name: "B", img: BMGSm, value: true, notes: ['G#3', 'A#4', 'B4', 'C#4', 'D#4', 'E4', 'F#4', 'G#4', 'A#5', 'B5', 'C#5', 'D#5', 'E5', 'F#5', 'G#5'] },
-            { id: 6, label: "F# Major", name: "F#", img: FSMDSm, value: true, notes: ['G#3', 'A#4', 'B4', 'C#4', 'D#4', 'E#4', 'F#4', 'G#4', 'A#5', 'B5', 'C#5', 'D#5', 'E#5', 'F#5', 'G#5'] },
-            { id: 7, label: "C# Major", name: "C#", img: CSMASm, value: true, notes: ['G#3', 'A#4', 'B#4', 'C#4', 'D#4', 'E#4', 'F#4', 'G#4', 'A#5', 'B#5', 'C#5', 'D#5', 'E#5', 'F#5', 'G#5'] },
+            { id: 0, label: "C Major", name: "C", img: CMAm, value: true, notes: ['A0', 'B0', 'C0', 'D0', 'E0', 'F0', 'G0'] },
+            { id: 1, label: "G Major", name: "G", img: GMEm, value: true, notes: ['A0', 'B0', 'C0', 'D0', 'E0', 'F1', 'G0'] },
+            { id: 2, label: "D Major", name: "D", img: DMBm, value: true, notes: ['A0', 'B0', 'C1', 'D0', 'E0', 'F1', 'G0'] },
+            { id: 3, label: "A Major", name: "A", img: AMFSm, value: true, notes: ['A0', 'B0', 'C1', 'D0', 'E0', 'F1', 'G1'] },
+            { id: 4, label: "E Major", name: "E", img: EMCSm, value: true, notes: ['A0', 'B0', 'C1', 'D1', 'E0', 'F1', 'G1'] },
+            { id: 5, label: "B Major", name: "B", img: BMGSm, value: true, notes: ['A1', 'B0', 'C1', 'D1', 'E0', 'F1', 'G1'] },
+            { id: 6, label: "F# Major", name: "F#", img: FSMDSm, value: true, notes: ['A1', 'B', 'C1', 'D1', 'E1', 'F1', 'G1'] },
+            { id: 7, label: "C# Major", name: "C#", img: CSMASm, value: true, notes: ['A1', 'B1', 'C1', 'D1', 'E1', 'F1', 'G1'] },
         ],
         Times: [
-            { id: 0, label: "3/4", name: "threefour", img: threefour, value: true, num: 3, denom: 4 },
-            { id: 1, label: "4/4", name: "fourfour", img: fourfour, value: true, num: 4, denom: 4 },
-            { id: 2, label: "6/8", name: "sixeight", img: sixeight, value: true, num: 6, denom: 8 },
-            { id: 3, label: "7/8", name: "sevenseight", img: sevenseight, value: true, num: 7, denom: 8 },
+            { id: 0, label: "3/4", name: "threefour", img: threefour, value: true, num: 3, denom: 4, crotchetBeats: 3 },
+            { id: 1, label: "4/4", name: "fourfour", img: fourfour, value: true, num: 4, denom: 4, crotchetBeats: 4 },
+            { id: 2, label: "6/8", name: "sixeight", img: sixeight, value: true, num: 6, denom: 8, crotchetBeats: 3 },
+            { id: 3, label: "7/8", name: "sevenseight", img: sevenseight, value: true, num: 7, denom: 8, crotchetBeats: 3.5 },
         ],
-        midiFile: ""
     };
 
     generate = () => {

@@ -13,34 +13,32 @@ export class FormKeySignature extends Component {
         this.props.prevStep();
     };
 
-
     render() {
         const { values, handleChange } = this.props;
-
 
         return (
             <Container maxWidth="md">
                 <h1 className="mb-5">Key Signatures</h1>
 
-                <FormGroup row>
-                    {
-                        values.Keys.map(item => (
-
-                            <FormControl key={item.id} >
-                                <FormControlLabel
-                                    control={<Checkbox checked={item.value} onChange={handleChange(item.id)} name={item.name} />}
-                                    label={
-                                        <React.Fragment>
-                                            <img src={item.img} alt={item.label} style={{ height: 50 }} />
-                                            {" " + item.label}
-                                        </React.Fragment>
-                                    }
-                                />
-                            </FormControl>
-
-                        ))
-                    }
-                </FormGroup>
+                <FormControl component="fieldset">
+                    <FormGroup row>
+                        {
+                            values.Keys.map(item => (
+                                <FormControl key={item.id} >
+                                    <FormControlLabel
+                                        control={<Checkbox checked={item.value} onChange={handleChange(item.id)} name={item.name} />}
+                                        label={
+                                            <React.Fragment>
+                                                <img src={item.img} alt={item.label} style={{ height: 50 }} />
+                                                {" " + item.label}
+                                            </React.Fragment>
+                                        }
+                                    />
+                                </FormControl>
+                            ))
+                        }
+                    </FormGroup>
+                </FormControl>
 
                 <br />
 

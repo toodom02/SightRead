@@ -1,13 +1,4 @@
-function createXML(keySig) {
-    const MusicAutomaton = require('music-automaton');
-
-    const metaData = new MusicAutomaton.MetaData('Generated Passage');
-    const scale = new MusicAutomaton.Scale(keySig.name, 'I');
-    const xml = MusicAutomaton.default(metaData, scale);
-
-    return xml
-}
-
+import { createXML } from './CreateXMLFile';
 
 const GenerateXML = function (Keys, Times) {
 
@@ -30,7 +21,8 @@ const GenerateXML = function (Keys, Times) {
     const randomKey = selectedKeys[Math.floor(Math.random() * selectedKeys.length)];
 
     //generates & returns xml
-    var xml = createXML(randomKey);
+    var xml = createXML(randomKey, randomTime);
+    console.log(xml)
     return xml;
 
 }

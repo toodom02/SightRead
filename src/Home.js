@@ -6,7 +6,7 @@ export const Home = () => (
 
     <div className="App">
         <Container maxWidth="md">
-            <Paper style={{ textAlign: "center", padding: "25px 0 25px 0", margin: "25px 0 25px 0", justifyContent: "center" }}>
+            <Paper style={{ textAlign: "center", padding: "25px 0 25px 0", margin: "25px 0 25px 0" }}>
                 <Form />
             </Paper>
         </Container>
