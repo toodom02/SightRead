@@ -1,6 +1,6 @@
 import { createXML } from './CreateXMLFile';
 
-const GenerateXML = function (Keys, Times) {
+const GenerateXML = function (Keys, Times, numBars) {
 
     // Creates new array of all time sigs selected
     let selectedTimes = [];
@@ -21,12 +21,9 @@ const GenerateXML = function (Keys, Times) {
     const randomKey = selectedKeys[Math.floor(Math.random() * selectedKeys.length)];
 
     //generates & returns xml
-    var xml = createXML(randomKey, randomTime);
-    console.log(xml)
-    return xml;
+    var xml = createXML(randomKey, randomTime, numBars);
 
+    return xml;
 }
 
 export default GenerateXML;
-
-

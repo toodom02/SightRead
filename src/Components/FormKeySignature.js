@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Button, FormControl, FormGroup, FormControlLabel, Checkbox } from '@material-ui/core';
+import { Container, Button, FormControl, FormGroup, FormControlLabel, Checkbox, Grid } from '@material-ui/core';
 
 
 export class FormKeySignature extends Component {
@@ -19,26 +19,29 @@ export class FormKeySignature extends Component {
         return (
             <Container maxWidth="md">
                 <h1 className="mb-5">Key Signatures</h1>
-
-                <FormControl component="fieldset">
-                    <FormGroup row>
-                        {
-                            values.Keys.map(item => (
-                                <FormControl key={item.id} >
-                                    <FormControlLabel
-                                        control={<Checkbox checked={item.value} onChange={handleChange(item.id)} name={item.name} />}
-                                        label={
-                                            <React.Fragment>
-                                                <img src={item.img} alt={item.label} style={{ height: 50 }} />
-                                                {" " + item.label}
-                                            </React.Fragment>
-                                        }
-                                    />
-                                </FormControl>
-                            ))
-                        }
-                    </FormGroup>
-                </FormControl>
+                <Grid container style={{ textAlign: "left" }}>
+                    <FormControl component="fieldset">
+                        <FormGroup row>
+                            {
+                                values.Keys.map(item => (
+                                    <Grid item key={item.id} xs={6} sm={3}>
+                                        <FormControl key={item.id} >
+                                            <FormControlLabel
+                                                control={<Checkbox checked={item.value} onChange={handleChange(item.id)} name={item.name} />}
+                                                label={
+                                                    <React.Fragment>
+                                                        <img src={item.img} alt={item.label} style={{ height: 50 }} />
+                                                        {" " + item.label}
+                                                    </React.Fragment>
+                                                }
+                                            />
+                                        </FormControl>
+                                    </Grid>
+                                ))
+                            }
+                        </FormGroup>
+                    </FormControl>
+                </Grid>
 
                 <br />
 
@@ -55,7 +58,7 @@ export class FormKeySignature extends Component {
                 >
                     Next
                         </Button>
-            </Container>
+            </Container >
         )
     }
 }
