@@ -52,6 +52,7 @@ export class Form extends Component {
             { id: 12, fifths: -5, label: "Db Major", name: "D-1", img: DFMbfm, value: true, mode: "major", notes: ['A-1', 'B-1', 'C+0', 'D-1', 'E-1', 'F+0', 'G-1'] },
             { id: 13, fifths: -6, label: "Gb Major", name: "G-1", img: GFMefm, value: true, mode: "major", notes: ['A-1', 'B-1', 'C-1', 'D-1', 'E-1', 'F+0', 'G-1'] },
 
+            { id: 21, fifths: +0, label: "A Minor", name: "A+0", img: CMam, value: true, mode: "minor", notes: ['A+0', 'B+0', 'C+0', 'D+0', 'E+0', 'F+0', 'G+1'] },
             { id: 14, fifths: +1, label: "E Minor", name: "E+0", img: GMem, value: true, mode: "minor", notes: ['A+0', 'B+0', 'C+0', 'D+1', 'E+0', 'F+1', 'G+0'] },
             { id: 15, fifths: +2, label: "B Minor", name: "B+0", img: DMbm, value: true, mode: "minor", notes: ['A+1', 'B+0', 'C+1', 'D+0', 'E+0', 'F+1', 'G+0'] },
             { id: 16, fifths: +3, label: "F# Minor", name: "F+1", img: AMfsm, value: true, mode: "minor", notes: ['A+0', 'B+0', 'C+1', 'D+0', 'E+1', 'F+1', 'G+1'] },
@@ -60,7 +61,6 @@ export class Form extends Component {
             { id: 19, fifths: +6, label: "D# Minor", name: "D+1", img: FSMdsm, value: true, mode: "minor", notes: ['A+1', 'B+0', 'C+2', 'D+1', 'E+1', 'F+1', 'G+1'] },
             { id: 20, fifths: +7, label: "A# Minor", name: "A+1", img: CSMasm, value: true, mode: "minor", notes: ['A+1', 'B+1', 'C+1', 'D+1', 'E+1', 'F+1', 'G+2'] },
 
-            { id: 21, fifths: +0, label: "A Minor", name: "A+0", img: CMam, value: true, mode: "minor", notes: ['A+0', 'B+0', 'C+0', 'D+0', 'E+0', 'F+0', 'G+1'] },
             { id: 22, fifths: -1, label: "D Minor", name: "D+0", img: FMdm, value: true, mode: "minor", notes: ['A+0', 'B-1', 'C+1', 'D+0', 'E+0', 'F+0', 'G+0'] },
             { id: 23, fifths: -2, label: "G Minor", name: "G+0", img: BFMgm, value: true, mode: "minor", notes: ['A+0', 'B-1', 'C+0', 'D+0', 'E-1', 'F+1', 'G+0'] },
             { id: 24, fifths: -3, label: "C Minor", name: "C+0", img: EFMcm, value: true, mode: "minor", notes: ['A-1', 'B+0', 'C+0', 'D+0', 'E-1', 'F+0', 'G+0'] },

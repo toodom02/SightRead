@@ -16,14 +16,38 @@ export class FormKeySignature extends Component {
     render() {
         const { values, handleChange } = this.props;
 
+        const majorKeys = values.Keys.filter(key => key.mode === "major");
+        const minorKeys = values.Keys.filter(key => key.mode === "minor");
+
         return (
             <Container maxWidth="md">
                 <h1 className="mb-5">Key Signatures</h1>
                 <Grid container style={{ textAlign: "left" }}>
                     <FormControl component="fieldset">
+                        <label>Major Keys:</label>
                         <FormGroup row>
                             {
-                                values.Keys.map(item => (
+                                majorKeys.map(item => (
+                                    <Grid item key={item.id} xs={6} sm={3}>
+                                        <FormControl key={item.id} >
+                                            <FormControlLabel
+                                                control={<Checkbox checked={item.value} onChange={handleChange(item.id)} name={item.name} />}
+                                                label={
+                                                    <React.Fragment>
+                                                        <img src={item.img} alt={item.label} style={{ height: 50 }} />
+                                                        {" " + item.label}
+                                                    </React.Fragment>
+                                                }
+                                            />
+                                        </FormControl>
+                                    </Grid>
+                                ))
+                            }
+                        </FormGroup>
+                        <label>Minor Keys:</label>
+                        <FormGroup row>
+                            {
+                                minorKeys.map(item => (
                                     <Grid item key={item.id} xs={6} sm={3}>
                                         <FormControl key={item.id} >
                                             <FormControlLabel

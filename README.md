@@ -1,3 +1,22 @@
+# **S♪ght*Read***
+
+SightRead is a simple React web app that generates and displays a musicXML file as sheet music, based on user inputs.
+
+Current features include:
+
+- Selecting Key Signatures
+- Selecting Time Signatures
+- Selecting Number of Bars
+- Generating MusicXML file
+
+## License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+- MIT license
+- Copyright 2020 © Dominic Too.
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

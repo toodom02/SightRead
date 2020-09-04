@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Button, FormControl, FormGroup, FormControlLabel, Checkbox, Grid, Slider, TextField } from '@material-ui/core';
+import { Container, Button, Slider } from '@material-ui/core';
 
 
 export class FormTimeSignature extends Component {
