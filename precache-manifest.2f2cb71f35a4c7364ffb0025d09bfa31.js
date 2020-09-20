@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9a0c2cba2fb0d2d11d3b0fc38e396a3b",
+    "revision": "c8f4591ee97ceea9200404ce68062fef",
     "url": "/SightRead/index.html"
   },
   {
-    "revision": "d823dc802550c9b9ea65",
+    "revision": "cd78b63e936166e9df5d",
     "url": "/SightRead/static/css/main.1b23d370.chunk.css"
   },
   {
-    "revision": "f2ce1f3e3e65e864ccbe",
-    "url": "/SightRead/static/js/2.c143e037.chunk.js"
+    "revision": "c7fdf65bafd2fce4f073",
+    "url": "/SightRead/static/js/2.229185eb.chunk.js"
   },
   {
     "revision": "e4bf1aeff8f9aae1d00d60724037f2cd",
-    "url": "/SightRead/static/js/2.c143e037.chunk.js.LICENSE.txt"
+    "url": "/SightRead/static/js/2.229185eb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d823dc802550c9b9ea65",
-    "url": "/SightRead/static/js/main.b92dbb25.chunk.js"
+    "revision": "cd78b63e936166e9df5d",
+    "url": "/SightRead/static/js/main.e6778da2.chunk.js"
   },
   {
     "revision": "f09c90639556196b98bd",
