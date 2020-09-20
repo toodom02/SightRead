@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/SightRead/static/css/main.1b23d370.chunk.css",
+    "main.js": "/SightRead/static/js/main.b92dbb25.chunk.js",
+    "main.js.map": "/SightRead/static/js/main.b92dbb25.chunk.js.map",
+    "runtime-main.js": "/SightRead/static/js/runtime-main.7f06c9bc.js",
+    "runtime-main.js.map": "/SightRead/static/js/runtime-main.7f06c9bc.js.map",
+    "static/js/2.c143e037.chunk.js": "/SightRead/static/js/2.c143e037.chunk.js",
+    "static/js/2.c143e037.chunk.js.map": "/SightRead/static/js/2.c143e037.chunk.js.map",
+    "index.html": "/SightRead/index.html",
+    "precache-manifest.d3d9a2c3aad1421513a7242f8e557dd8.js": "/SightRead/precache-manifest.d3d9a2c3aad1421513a7242f8e557dd8.js",
+    "service-worker.js": "/SightRead/service-worker.js",
+    "static/css/main.1b23d370.chunk.css.map": "/SightRead/static/css/main.1b23d370.chunk.css.map",
+    "static/js/2.c143e037.chunk.js.LICENSE.txt": "/SightRead/static/js/2.c143e037.chunk.js.LICENSE.txt",
+    "static/media/34.svg": "/SightRead/static/media/34.1951abfa.svg",
+    "static/media/44.svg": "/SightRead/static/media/44.97cf058c.svg",
+    "static/media/68.svg": "/SightRead/static/media/68.346256ab.svg",
+    "static/media/78.svg": "/SightRead/static/media/78.075d76be.svg",
+    "static/media/AFf.svg": "/SightRead/static/media/AFf.37fe4b58.svg",
+    "static/media/Afs.svg": "/SightRead/static/media/Afs.cb69b969.svg",
+    "static/media/BFg.svg": "/SightRead/static/media/BFg.ba718d06.svg",
+    "static/media/Baf.svg": "/SightRead/static/media/Baf.e7da0d07.svg",
+    "static/media/Bgs.svg": "/SightRead/static/media/Bgs.54093561.svg",
+    "static/media/CSas.svg": "/SightRead/static/media/CSas.d1a321ec.svg",
+    "static/media/Ca.svg": "/SightRead/static/media/Ca.8fab8632.svg",
+    "static/media/DFbf.svg": "/SightRead/static/media/DFbf.ebe5b67d.svg",
+    "static/media/Db.svg": "/SightRead/static/media/Db.d0e39748.svg",
+    "static/media/EFc.svg": "/SightRead/static/media/EFc.1bd3f5b0.svg",
+    "static/media/Ecs.svg": "/SightRead/static/media/Ecs.e2e51500.svg",
+    "static/media/FSds.svg": "/SightRead/static/media/FSds.2c0e9d49.svg",
+    "static/media/Fd.svg": "/SightRead/static/media/Fd.99ae8f30.svg",
+    "static/media/GFef.svg": "/SightRead/static/media/GFef.aa8470d1.svg",
+    "static/media/Ge.svg": "/SightRead/static/media/Ge.fd6fce19.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7f06c9bc.js",
+    "static/js/2.c143e037.chunk.js",
+    "static/css/main.1b23d370.chunk.css",
+    "static/js/main.b92dbb25.chunk.js"
+  ]
+}
