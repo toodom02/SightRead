@@ -21,7 +21,7 @@ export const NavBar = () => (
     <Styles>
         <Navbar collapseOnSelect className="shadow" expand="lg" variant="light" fixed="top">
             <div className="container">
-                <Navbar.Brand href="/"><b>S♪ght<font color="#006666"><em>Read</em></font></b></Navbar.Brand>
+                <Navbar.Brand href="/SightRead/"><b>S♪ght<font color="#006666"><em>Read</em></font></b></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto">

@@ -11,7 +11,7 @@ import { NavBar } from './Components/NavBar';
 function App() {
   return (
     <React.Fragment>
-      <Router>
+      <Router basename="/SightRead/">
         <NavBar />
         <Layout>
           <Switch>

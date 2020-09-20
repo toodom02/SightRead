@@ -30,7 +30,9 @@ export function createXML(keySig, timeSig, numBars) {
 
     while (timeLeft > 0) {
 
-        var [note, timeLeft] = getNote(keySig, timeLeft);
+        var values = getNote(keySig, timeLeft);
+        var note = values[0];
+        timeLeft = values[1];
         xml += note;
     }
 
@@ -242,7 +244,7 @@ function getNote(keySig, timeLeft) {
             if (i === 0) {
                 note += '<beam number="1">begin</beam>';
             }
-            else if (i == notes.length - 1) {
+            else if (i === notes.length - 1) {
                 note += '<beam number="1">end</beam>';
             }
             else {
