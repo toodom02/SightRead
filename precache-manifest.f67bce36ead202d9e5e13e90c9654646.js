@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c8f4591ee97ceea9200404ce68062fef",
+    "revision": "25027d3933c4bff06bfd2140d50d9bab",
     "url": "/SightRead/index.html"
   },
   {
-    "revision": "cd78b63e936166e9df5d",
-    "url": "/SightRead/static/css/main.1b23d370.chunk.css"
+    "revision": "11597b11fd0035c1024e",
+    "url": "/SightRead/static/css/main.dee0d74f.chunk.css"
   },
   {
-    "revision": "c7fdf65bafd2fce4f073",
-    "url": "/SightRead/static/js/2.229185eb.chunk.js"
+    "revision": "b1bfcda7da777df22dab",
+    "url": "/SightRead/static/js/2.c0b09a8a.chunk.js"
   },
   {
     "revision": "e4bf1aeff8f9aae1d00d60724037f2cd",
-    "url": "/SightRead/static/js/2.229185eb.chunk.js.LICENSE.txt"
+    "url": "/SightRead/static/js/2.c0b09a8a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cd78b63e936166e9df5d",
-    "url": "/SightRead/static/js/main.e6778da2.chunk.js"
+    "revision": "11597b11fd0035c1024e",
+    "url": "/SightRead/static/js/main.da2011e5.chunk.js"
   },
   {
     "revision": "f09c90639556196b98bd",
