@@ -15,7 +15,7 @@ export const About = () => (
                     <li>Selecting Number of Bars</li>
                     <li>Generating MusicXML file</li>
                 </ul>
-                <p>More to come...</p>
+                <br></br>
                 <p>Checkout the project on GitHub: <a href="https://github.com/toodom02/sightread">SightRead</a></p>
                 <h6 align="center">Copyright © 2020 - Dominic Too</h6>
             </Paper>

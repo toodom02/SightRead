@@ -25,7 +25,7 @@ export class FormTimeSignature extends Component {
                     defaultValue={values.numBars}
                     value={values.numBars}
                     onChange={handleChange}
-                    valueLabelDisplay="auto"
+                    valueLabelDisplay="on"
                     step={1}
                     min={2}
                     max={50}

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container } from '@material-ui/core';
+import { Container, Button } from '@material-ui/core';
 import GetAppIcon from '@material-ui/icons/GetApp';
 import OpenSheetMusicDisplay from '../lib/OpenSheetMusicDisplay';
 
@@ -26,7 +26,9 @@ export class FormSuccess extends Component {
         return (
             <Container maxWidth="xl">
                 <OpenSheetMusicDisplay file={this.state.file} />
-                <a href={this.state.downloadUrl} title="Download musicXML File" download="generated_passage.musicxml"> Download <GetAppIcon /></a>
+                <Button href={this.state.downloadUrl} title="Download musicXML File" download="generated_passage.musicxml" color="primary">
+                    Download <GetAppIcon />
+                </Button>
             </Container>
         )
     }
