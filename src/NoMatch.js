@@ -1,11 +1,19 @@
-import React from 'react'
+import React from 'react';
+import { Container, Button } from '@material-ui/core';
 
 export const NoMatch = () => (
     <div className="App">
-        <div className="container text-center align-middle">
-            <h1 style={{ color: "White" }}>Oops!</h1>
-            <p style={{ color: "LightGray" }}>Something went wrong.</p>
-            <a type="button" class="btn btn-outline-info" href="/">Home</a>
-        </div>
-    </div>
+        <Container className="text-center align-middle" style={{ color: "White" }}>
+            <h1>Oops!</h1>
+            <p>Something went wrong.</p>
+            <Button
+                variant="contained"
+                color="primary"
+                href="./"
+                style={{ color: "White" }}
+            >
+                Home
+            </Button>
+        </Container>
+    </div >
 )

@@ -22,7 +22,7 @@ export class FormWelcome extends Component {
                     color="primary"
                     onClick={this.continue}
                 >Next
-                    </Button>
+                </Button>
             </Container>
         )
     }

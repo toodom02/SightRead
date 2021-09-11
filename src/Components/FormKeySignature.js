@@ -73,7 +73,7 @@ export class FormKeySignature extends Component {
                     onClick={this.back}
                 >
                     Back
-                        </Button>
+                </Button>
 
                 <Button
                     variant="contained"
@@ -81,7 +81,7 @@ export class FormKeySignature extends Component {
                     onClick={this.continue}
                 >
                     Next
-                        </Button>
+                </Button>
             </Container >
         )
     }

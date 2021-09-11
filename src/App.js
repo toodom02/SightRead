@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Redirect, Route, Switch, BrowserRouter } from 'react-router-dom';
 import { Home } from './Home';
 import { About } from './About';
 import { NoMatch } from './NoMatch';
@@ -11,16 +11,17 @@ import { NavBar } from './Components/NavBar';
 function App() {
   return (
     <React.Fragment>
-      <Router basename="/SightRead/">
+      <BrowserRouter basename="/SightRead">
         <NavBar />
         <Layout>
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
-            <Route component={NoMatch} />
+            <Route path="/404" component={NoMatch} />
+            <Redirect to="/404" />
           </Switch>
         </Layout>
-      </Router>
+      </BrowserRouter>
     </React.Fragment>
   );
 }

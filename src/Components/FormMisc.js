@@ -38,7 +38,7 @@ export class FormTimeSignature extends Component {
                     onClick={this.back}
                 >
                     Back
-                    </Button>
+                </Button>
 
                 <Button
                     variant="contained"
@@ -46,7 +46,7 @@ export class FormTimeSignature extends Component {
                     onClick={this.continue}
                 >
                     Generate
-                    </Button>
+                </Button>
             </Container>
         )
     }
